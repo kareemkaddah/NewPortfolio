@@ -1,0 +1,42 @@
+.hero {
+  margin-left: 0px;
+
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  height: 100vh;
+
+  padding-left: 4rem; /* Add spacing from the left */
+}
+
+.main-text {
+  text-align: left;
+}
+
+.main-text h1 {
+  margin: 0;
+  font-size: 48px;
+  color: #222;
+}
+
+.main-text h1:nth-of-type(2) {
+  font-size: 90px;
+  margin-top: 10px;
+  color: #a600ff;
+}
+
+.main-text h3 {
+  margin-top: 20px;
+  font-weight: normal;
+  max-width: 600px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}

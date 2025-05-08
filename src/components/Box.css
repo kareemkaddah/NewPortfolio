@@ -1,0 +1,8 @@
+.box {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
+.button:hoover {
+  background-color: #a600ff;
+}
