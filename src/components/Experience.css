@@ -1,64 +1,90 @@
-.experience-container {
+.experience-card {
   display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  font-family: sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 100%;
+  width: 600px;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 1rem auto;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+  gap: 1rem;
+}
+.experience-card:hover {
+  background-color: #dfdfdf;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.05);
+  transform: translate(0, 0.25em);
 }
 
-.tabs {
+.left-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #8da58f;
+}
+
+.text-info {
   display: flex;
   flex-direction: column;
-  border-left: 2px solid #e2e2e2;
 }
 
-.tab-button {
-  background: none;
-  border: none;
-  text-align: left;
-  padding: 1rem;
-  font-size: 1rem;
-  color: #666;
-  cursor: pointer;
-  border-left: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.tab-button.active {
-  color: #a600ff;
-  border-left: 2px solid #a600ff;
-
+.company-name {
+  font-size: 2.5rem;
   font-weight: bold;
-}
-
-.content h2 {
   margin: 0;
-  font-size: 1.5rem;
-  color: #222;
 }
 
-.content h2 span {
-  color: #a600ff;
-}
-
-.date {
-  font-size: 0.85rem;
-  color: #999;
-  margin-bottom: 1rem;
-}
-
-.content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.content li {
-  margin-bottom: 1rem;
+.description {
+  font-size: 1rem;
   color: #555;
-  display: flex;
-  align-items: flex-start;
+  margin: 0.25rem 0 0;
 }
 
-.check {
-  color: #a600ff;
-  margin-right: 0.5rem;
+.duration {
+  font-size: 0.875rem;
+  color: #777;
+  font-style: italic;
+  margin: 0.25rem 0 0;
+}
+
+.small-button {
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.small-button:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  .experience-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-content {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .small-button {
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
 }

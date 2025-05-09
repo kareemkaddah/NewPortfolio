@@ -1,4 +1,4 @@
-.about-text {
+.project-text {
   display: flex;
   flex-direction: column;
 
@@ -6,19 +6,19 @@
   align-items: flex-start; /* Align content to the left */
   text-align: left;
   padding-left: 2rem; /* Optional left spacing */
-  padding-right: 2rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
   max-width: 100%;
+  padding-right: 2rem;
   background-color: #fdfdfd;
 }
 
-.about-text h1 {
+.project-text h1 {
   margin: 0 0 1rem 0;
   font-size: 90px;
 }
 
-.about-text h2 {
+.project-text h2 {
   max-width: 800px;
   line-height: 1.6;
   font-weight: normal;

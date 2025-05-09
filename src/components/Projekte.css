@@ -1,0 +1,63 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(220, 220, 220);
+  border: 1px solid var(--gray-400);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 600px;
+  height: 450px;
+  transition: transform 0.3s ease;
+  padding: 0.7rem;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.project-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.skill-box {
+  margin-left: 5px;
+  margin-bottom: 30px;
+  background-color: black;
+  border-color: none;
+  border-radius: 9px;
+  padding: 10px 15px; /* Adds space inside */
+  height: 12px;
+  display: inline-block;
+  flex: 0 1 auto;
+  min-width: 20px; /* Smallest width allowed */
+  max-width: 300px; /* Prevents it from getting too wide */
+
+  color: white;
+  font-size: 12px;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+  transform: scale(1.05); /* Slight pop-up effect */
+  font-size: 14px;
+}
+
+.project-content {
+  h3 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--gray-900);
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: var(--gray-700);
+  }
+}

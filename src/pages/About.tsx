@@ -2,31 +2,6 @@ import React from 'react';
 import './About.css';
 import Experience from '../components/Experience';
 
-const education = [
-  {
-    company: 'RWTH Aachen',
-    title: 'Masters Computer Science',
-    date: 'April 2025 - On Going',
-  },
-  {
-    company: 'TU Dortmund',
-    title: 'Bachelor Computer Sciencce',
-    date: 'April 2019 - October 2024',
-  },
-];
-const experience = [
-  {
-    company: 'Sepp.med',
-    title: 'Software Developer',
-    date: '04/2023 - 05/2024',
-  },
-  {
-    company: 'TU Dortmund',
-    title: 'Tutor DAP2',
-    date: '04/2023 - 10/2023',
-  },
-];
-
 const About: React.FC = () => {
   return (
     <div id='about' className='about-text'>
@@ -47,13 +22,49 @@ const About: React.FC = () => {
       <h2 style={{ fontSize: 60, marginTop: '4rem', color: '#a600ff' }}>
         Education:
       </h2>
-      <Experience experiences={education} />
-
+      <div style={{ marginLeft: -20 }}>
+        <Experience
+          companyName='RWTH Aachne'
+          websiteUrl='https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/studiengaenge/liste-aktuelle-studiengaenge/studiengangbeschreibung/~bcfg/informatik-m-sc/'
+          description="Master's Degree in  Computer Science (BSC)"
+          duration='04/2025 - On going'
+          imageUrl='https://banner2.cleanpng.com/20180624/liy/aazkx0oue.webp'
+        />
+        <Experience
+          companyName='TU Dortmund'
+          websiteUrl='https://www.tu-dortmund.de/'
+          description="Bachelor's Degree in  Computer Science (BSC)"
+          duration='04/2019 - 10/2024'
+          imageUrl='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ozoy4PwsMVkBh4loyTlwEEe0PTxJ1grNoA&s'
+        />
+      </div>
       <h2 style={{ fontSize: 60, marginTop: '4rem', color: '#a600ff' }}>
         Work
       </h2>
       <h2 style={{ fontSize: 60, marginTop: '-2rem' }}>Experience:</h2>
-      <Experience experiences={experience} />
+      <div style={{ marginLeft: -20 }}>
+        <Experience
+          companyName='Platepal'
+          duration='01/2024-12/2024'
+          imageUrl=''
+          websiteUrl=''
+          description='Co-founder & Software Developer'
+        />
+        <Experience
+          websiteUrl=''
+          companyName='Sepp.med'
+          duration='04/2023 - 05/2024'
+          imageUrl='https://www.seppmed.de/wp-content/uploads/2023/04/seppmed-logo-farbig.svg'
+          description='Software Developer'
+        />
+        <Experience
+          websiteUrl=''
+          companyName='TU Dortmund'
+          duration='04/2023 - 10/2023'
+          description='Tutor '
+          imageUrl='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ozoy4PwsMVkBh4loyTlwEEe0PTxJ1grNoA&s'
+        />
+      </div>
     </div>
   );
 };
