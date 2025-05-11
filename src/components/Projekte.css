@@ -12,6 +12,7 @@
   padding: 0.7rem;
   transform-style: preserve-3d;
   will-change: transform;
+  cursor: default;
 }
 
 .project-card:hover {

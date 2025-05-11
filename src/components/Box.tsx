@@ -1,14 +1,13 @@
 import React from 'react';
 import './Box.css';
 
-interface BoxProps {
+type BoxProps = {
   label: string;
   color?: string;
   textColor?: string;
-  hoverEffect?: string;
   onClick?: () => void;
   href?: string;
-}
+};
 
 const Box: React.FC<BoxProps> = ({
   label,
@@ -20,13 +19,6 @@ const Box: React.FC<BoxProps> = ({
   const buttonStyle = {
     backgroundColor: color,
     color: textColor,
-    padding: '12px 30px',
-    borderRadius: '8px',
-    border: 'none',
-    cursor: 'pointer',
-    fontSize: '1rem',
-    fontWeight: '500',
-    transition: 'all 0.3s ease',
   };
 
   const handleClick = (e: React.MouseEvent) => {
@@ -42,17 +34,19 @@ const Box: React.FC<BoxProps> = ({
 
   if (href) {
     return (
-      <div style={{ marginLeft: '10px' }}>
+      <div className='box-container'>
         <a href={href} style={{ textDecoration: 'none' }} onClick={handleClick}>
-          <button style={buttonStyle}>{label}</button>
+          <button className='box-button' style={buttonStyle}>
+            {label}
+          </button>
         </a>
       </div>
     );
   }
 
   return (
-    <div style={{ marginLeft: '10px' }}>
-      <button style={buttonStyle} onClick={onClick}>
+    <div className='box-container'>
+      <button className='box-button' style={buttonStyle} onClick={onClick}>
         {label}
       </button>
     </div>

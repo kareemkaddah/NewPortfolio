@@ -1,12 +1,15 @@
 import React from 'react';
 import './Hero.css';
 import Box from '../components/Box';
+import WavingHand from '../components/WavingHand';
 
 const Hero: React.FC = () => {
   return (
     <div id='home' className='hero slide-in'>
       <div className='main-text'>
-        <h1>Hi I'm Kareem 👋</h1>
+        <h1>
+          Hi I'm Kareem <WavingHand />
+        </h1>
         <h1 style={{ fontSize: 90, color: '#a600ff', fontWeight: 'bold' }}>
           Fullstack
         </h1>

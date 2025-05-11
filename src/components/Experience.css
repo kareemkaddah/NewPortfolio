@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
   max-width: 100%;
   width: 600px;
   border-radius: 1rem;
@@ -10,20 +10,46 @@
   background-color: white;
   box-shadow: -34px 34px 69px #d9d9d9, 34px -34px 69px #ffffff;
   margin: 1rem auto;
-  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
 }
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(166, 0, 255, 0.05),
+    rgba(166, 0, 255, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
 .experience-card:hover {
-  background-color: #dfdfdf;
-  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.05);
-  transform: translate(0, 0.25em);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(166, 0, 255, 0.2);
+}
+
+.experience-card:hover::before {
+  opacity: 1;
 }
 
 .left-content {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .company-logo {
@@ -32,6 +58,13 @@
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #8da58f;
+  transition: all 0.4s ease;
+}
+
+.experience-card:hover .company-logo {
+  transform: scale(1.1);
+  border-color: #a600ff;
+  box-shadow: 0 0 20px rgba(166, 0, 255, 0.2);
 }
 
 .text-info {
@@ -43,12 +76,22 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
+  transition: color 0.3s ease;
+}
+
+.experience-card:hover .company-name {
+  color: #a600ff;
 }
 
 .description {
   font-size: 1rem;
   color: #555;
   margin: 0.25rem 0 0;
+  transition: color 0.3s ease;
+}
+
+.experience-card:hover .description {
+  color: #333;
 }
 
 .duration {
@@ -56,6 +99,11 @@
   color: #777;
   font-style: italic;
   margin: 0.25rem 0 0;
+  transition: color 0.3s ease;
+}
+
+.experience-card:hover .duration {
+  color: #a600ff;
 }
 
 .small-button {
@@ -64,17 +112,25 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .small-button:hover {
-  background-color: #e0e0e0;
+  background-color: #a600ff;
+  transform: scale(1.1);
+}
+
+.small-button:hover svg {
+  fill: white;
 }
 
 @media (max-width: 600px) {
   .experience-card {
     flex-direction: column;
     align-items: flex-start;
+    padding: 1rem;
   }
 
   .left-content {

@@ -11,6 +11,7 @@
   padding: 0 2rem;
   transition: background-color 0.5s ease;
   z-index: 1000;
+  cursor: default;
 }
 
 .header.scrolled {
@@ -43,7 +44,7 @@
 .name-container {
   display: flex;
   align-items: center;
-  cursor: pointer;
+  cursor: default;
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.2;

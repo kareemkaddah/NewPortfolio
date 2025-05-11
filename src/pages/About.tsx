@@ -13,10 +13,10 @@ const About: React.FC = () => {
         Me:
       </h1>
       <h2>
-        Passionate software developer with experience in cloud computing and
-        full-stack development. Skilled in React.js and TypeScript, with a
-        strong focus on performance and user experience. Dedicated to continuous
-        learning and collaborative teamwork.
+        Passionate software developer 💻 with experience in cloud computing ☁️
+        and full-stack development. Skilled in React.js ⚛️ and TypeScript, with
+        a strong focus on performance ⚡ and user experience. Dedicated to
+        continuous learning 📚 and collaborative teamwork.
       </h2>
 
       <h2 style={{ fontSize: 60, marginTop: '4rem', color: '#a600ff' }}>
@@ -24,7 +24,7 @@ const About: React.FC = () => {
       </h2>
       <div style={{ marginLeft: -20 }}>
         <Experience
-          companyName='RWTH Aachne'
+          companyName='RWTH Aachen'
           websiteUrl='https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/studiengaenge/liste-aktuelle-studiengaenge/studiengangbeschreibung/~bcfg/informatik-m-sc/'
           description="Master's Degree in  Computer Science (BSC)"
           duration='04/2025 - On going'

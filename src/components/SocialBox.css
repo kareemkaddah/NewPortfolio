@@ -21,6 +21,7 @@
   transition: transform 0.3s ease, background-color 0.3s ease,
     box-shadow 0.3s ease;
   z-index: 1000;
+  cursor: default;
 }
 
 .social-box:hover {
@@ -46,6 +47,10 @@
 
 .social-links svg:hover {
   transform: scale(1.2);
+}
+
+.social-links a {
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
