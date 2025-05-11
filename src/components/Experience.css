@@ -8,7 +8,7 @@
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: -34px 34px 69px #d9d9d9, 34px -34px 69px #ffffff;
   margin: 1rem auto;
   transition: all 175ms cubic-bezier(0, 0, 1, 1);
   gap: 1rem;
