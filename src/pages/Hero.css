@@ -1,16 +1,16 @@
 .hero {
-  margin-left: 0px;
-
+  margin-left: 0;
   display: flex;
-  justify-content: flex-start; /* Align content to the left */
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
-
-  padding-left: 4rem; /* Add spacing from the left */
+  padding-left: 4rem;
+  max-width: 100%;
 }
 
 .main-text {
   text-align: left;
+  max-width: 800px;
 }
 
 .main-text h1 {

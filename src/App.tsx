@@ -5,6 +5,7 @@ import Hero from './pages/Hero';
 import Header from './components/Header';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Projects />
       <SocialBox />
+      <ScrollToTop />
     </>
   );
 }

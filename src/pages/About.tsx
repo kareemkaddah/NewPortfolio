@@ -4,7 +4,7 @@ import Experience from '../components/Experience';
 
 const About: React.FC = () => {
   return (
-    <div id='about' className='about-text'>
+    <div id='about' className='about-text slide-in-delay-1'>
       <h1 style={{ fontSize: 90, fontWeight: 'bold', color: '#a600ff' }}>
         About
       </h1>
@@ -51,14 +51,14 @@ const About: React.FC = () => {
           description='Co-founder & Software Developer'
         />
         <Experience
-          websiteUrl=''
+          websiteUrl='https://www.seppmed.de/'
           companyName='Sepp.med'
           duration='04/2023 - 05/2024'
           imageUrl='https://www.seppmed.de/wp-content/uploads/2023/04/seppmed-logo-farbig.svg'
           description='Software Developer'
         />
         <Experience
-          websiteUrl=''
+          websiteUrl='https://cs.tu-dortmund.de/studium/bachelor-informatik/studienplan-bachelor-informatik-beginn-ws/'
           companyName='TU Dortmund'
           duration='04/2023 - 10/2023'
           description='Tutor '

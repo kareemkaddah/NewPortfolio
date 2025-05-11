@@ -4,7 +4,7 @@ import Box from '../components/Box';
 
 const Hero: React.FC = () => {
   return (
-    <div id='home' className='hero'>
+    <div id='home' className='hero slide-in'>
       <div className='main-text'>
         <h1>Hi I'm Kareem 👋</h1>
         <h1 style={{ fontSize: 90, color: '#a600ff', fontWeight: 'bold' }}>
@@ -18,7 +18,12 @@ const Hero: React.FC = () => {
         </h3>
         <div className='buttons'>
           <Box label='Contact Me' />
-          <Box label='Browse Projects' color='#f4f4f4' textColor='black' />
+          <Box
+            href='#projects'
+            label='Browse Projects'
+            color='#a600ff'
+            textColor='white'
+          />
         </div>
       </div>
     </div>

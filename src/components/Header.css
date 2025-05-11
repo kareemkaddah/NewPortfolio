@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   z-index: 1000;
 }
 
@@ -37,4 +37,59 @@
 
 .message-icon {
   cursor: pointer;
+}
+
+/* Name container styles */
+.name-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.initial {
+  font-size: 1.4rem;
+  color: #a600ff;
+  transition: transform 0.8s ease;
+}
+
+.rest-of-name {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.3s ease;
+  opacity: 0;
+}
+
+.name-container.expanded .rest-of-name {
+  max-width: 100px;
+  opacity: 1;
+  margin: 0 2px;
+}
+
+.name-container.expanded .initial {
+  transform: translateX(-2px);
+}
+
+.name-container.expanded .initial:last-of-type {
+  transform: translateX(2px);
+}
+
+/* Navigation link styles */
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  letter-spacing: 0;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  letter-spacing: 2px;
+  color: #a600ff;
 }

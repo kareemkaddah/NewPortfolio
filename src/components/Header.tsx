@@ -3,6 +3,7 @@ import './Header.css';
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,14 +16,27 @@ const Header: React.FC = () => {
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className='left'>
-        <span>
-          Kareem <br /> Kaddah
-        </span>
+        <div
+          className={`name-container ${isHovered ? 'expanded' : ''}`}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <span className='initial'>K</span>
+          <span className='rest-of-name'>areem</span>
+          <span className='initial'>K</span>
+          <span className='rest-of-name'>addah</span>
+        </div>
       </div>
       <div className='center'>
-        <a href='#home'>Home</a>
-        <a href='#about'>About</a>
-        <a href='#projects'>Projects</a>
+        <a href='#home' className='nav-link'>
+          Home
+        </a>
+        <a href='#about' className='nav-link'>
+          About
+        </a>
+        <a href='#projects' className='nav-link'>
+          Projects
+        </a>
       </div>
       <div className='right'>
         <span className='message-icon'>💬</span>
