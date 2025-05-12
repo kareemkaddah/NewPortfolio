@@ -4,25 +4,32 @@
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  padding-left: 4rem;
+  padding-left: clamp(1rem, 5vw, 4rem);
   max-width: 100%;
+  background-color: #ffffff;
 }
 
 .main-text {
   text-align: left;
   max-width: 800px;
+  width: 100%;
 }
 
 .main-text h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: clamp(2rem, 4vw, 48px);
   color: #222;
 }
 
 .main-text h1:nth-of-type(2) {
-  font-size: 90px;
+  font-size: clamp(3rem, 8vw, 90px);
   margin-top: 10px;
   color: #a600ff;
+}
+
+.main-text h1:nth-of-type(3) {
+  font-size: clamp(3rem, 8vw, 90px);
+  font-weight: bold;
 }
 
 .main-text h3 {
@@ -31,6 +38,7 @@
   max-width: 600px;
   line-height: 1.5;
   color: #555;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
 .buttons {
@@ -39,4 +47,18 @@
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hero {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-right: 1rem;
+  }
 }

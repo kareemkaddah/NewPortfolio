@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
+import Platepal from '../assets/Platepal.png';
 import Zooloretto from '../assets/Zooloretto.png';
 import TrafficApp from '../assets/TrafficApp.png';
 import Aiagents from '../assets/AIAgents.png';
@@ -11,7 +12,7 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      projectImage: '',
+      projectImage: Platepal,
       projectDescripition:
         'Contributed to the implementation of MVP features across both frontend and backend. Built the MVP using AWS CDK, AWS Serverless, DynamoDB, AWS Lambda, API Gateway, React, React Native, and Next.js. Implemented a new deployment pipeline with automated testing. Designed and executed unit, integration, and end-to-end tests using React Testing Library, Jest, and Playwright to ensure code quality.',
       projectName: 'Platepal',

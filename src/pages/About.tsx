@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import Experience from '../components/Experience';
+import Platepal from '../assets/Platepal.png';
 
 const About: React.FC = () => {
   return (
@@ -46,7 +47,7 @@ const About: React.FC = () => {
         <Experience
           companyName='Platepal'
           duration='01/2024-12/2024'
-          imageUrl=''
+          imageUrl={Platepal}
           websiteUrl=''
           description='Co-founder & Software Developer'
         />

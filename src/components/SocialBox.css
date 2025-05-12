@@ -18,10 +18,21 @@
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  transition: transform 0.3s ease, background-color 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   z-index: 1000;
   cursor: default;
+}
+
+.social-box.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.social-box.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(20px);
 }
 
 .social-box:hover {
@@ -55,7 +66,22 @@
 
 @media (max-width: 600px) {
   .social-box {
-    width: 90%;
+    width: 170px;
     padding: 0 1rem;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-box.visible {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .social-box.hidden {
+    transform: translateX(-50%) translateY(20px);
+  }
+
+  .social-box:hover {
+    transform: translateX(-50%) scale(1.05);
   }
 }

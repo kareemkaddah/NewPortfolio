@@ -8,7 +8,7 @@
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
-  box-shadow: -34px 34px 69px #d9d9d9, 34px -34px 69px #ffffff;
+  box-shadow: -20px 20px 40px #d9d9d9, 20px -20px 40px #ffffff;
   margin: 1rem auto;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   gap: 1rem;
@@ -35,7 +35,7 @@
 
 .experience-card:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
   border-color: rgba(166, 0, 255, 0.2);
 }
 
@@ -73,7 +73,7 @@
 }
 
 .company-name {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: bold;
   margin: 0;
   transition: color 0.3s ease;
@@ -84,7 +84,7 @@
 }
 
 .description {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   color: #555;
   margin: 0.25rem 0 0;
   transition: color 0.3s ease;
@@ -95,7 +95,7 @@
 }
 
 .duration {
-  font-size: 0.875rem;
+  font-size: clamp(0.7rem, 1.8vw, 0.875rem);
   color: #777;
   font-style: italic;
   margin: 0.25rem 0 0;
@@ -126,21 +126,68 @@
   fill: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .experience-card {
+    width: 90%;
+    padding: 1.2rem;
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .left-content {
+    gap: 1rem;
+  }
+}
+@media (max-width: 480px) {
   .experience-card {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
+    gap: 1rem;
   }
 
   .left-content {
-    flex-direction: row;
-    align-items: center;
     width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .company-logo {
+    flex-shrink: 0;
+  }
+
+  .text-info {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    overflow: visible;
+  }
+
+  .company-name {
+    font-size: 1.2rem;
+    color: #000;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
 
   .small-button {
     align-self: flex-end;
-    margin-top: 1rem;
   }
 }

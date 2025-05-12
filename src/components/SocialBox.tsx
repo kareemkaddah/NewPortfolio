@@ -1,9 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import './SocialBox.css';
 
 const SocialBox: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleScroll = useCallback(() => {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Hide when within 100px of the bottom
+    if (documentHeight - scrollPosition < 100) {
+      setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    let ticking = false;
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [handleScroll]);
+
   return (
-    <div className='social-box'>
+    <div className={`social-box ${isVisible ? 'visible' : 'hidden'}`}>
       <div className='social-links'>
         <a
           href='https://github.com/kareemkaddah'
