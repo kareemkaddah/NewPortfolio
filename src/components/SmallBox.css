@@ -1,0 +1,19 @@
+.skillbox {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0.3rem;
+  cursor: default;
+}
+
+.skillbox:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}

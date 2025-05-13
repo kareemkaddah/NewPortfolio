@@ -8,7 +8,7 @@
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
-  box-shadow: -20px 20px 40px #d9d9d9, 20px -20px 40px #ffffff;
+  box-shadow: -15px 3px 20px #d9d9d9, 15px -15px 30px #ffffff;
   margin: 1rem auto;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   gap: 1rem;
@@ -35,7 +35,7 @@
 
 .experience-card:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   border-color: rgba(166, 0, 255, 0.2);
 }
 

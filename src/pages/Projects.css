@@ -14,13 +14,14 @@
   margin: 0 0 1rem 0;
   font-size: clamp(3rem, 8vw, 90px);
   max-width: 800px;
+  color: #a600ff;
 }
 
 .project-text h2 {
   max-width: 800px;
   line-height: 1.6;
   font-weight: normal;
-  color: #444;
+  color: #333;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
@@ -60,11 +61,12 @@
   .project-text h1 {
     font-size: clamp(2.5rem, 6vw, 90px);
     margin: 0 0 0.5rem 0;
+    color: #a600ff;
   }
 
   .project-text h2 {
     font-size: clamp(1rem, 2.2vw, 1.5rem);
-    color: #444;
+    color: #333;
   }
 
   .projects-grid {
@@ -81,11 +83,12 @@
   .project-text h1 {
     font-size: clamp(2rem, 5vw, 90px);
     margin: 0 0 0.5rem 0;
+    color: #a600ff;
   }
 
   .project-text h2 {
     font-size: clamp(0.9rem, 2vw, 1.5rem);
-    color: #444;
+    color: #333;
   }
 
   .projects-grid {

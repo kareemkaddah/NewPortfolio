@@ -6,6 +6,7 @@ import TrafficApp from '../assets/TrafficApp.png';
 import Aiagents from '../assets/AIAgents.png';
 import Projekte from '../components/Projekte';
 import Box from '../components/Box';
+import SmallBox from '../components/SmallBox';
 
 const Projects: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
@@ -49,7 +50,14 @@ const Projects: React.FC = () => {
   return (
     <div>
       <div id='projects' className='project-text slide-in-delay-2'>
-        <h1 style={{ fontSize: 90, fontWeight: 'bold', color: '#a600ff' }}>
+        <h1
+          style={{
+            fontSize: 90,
+            fontWeight: 'bold',
+            color: '#a600ff',
+            overflow: 'hidden',
+          }}
+        >
           Projects:
         </h1>
         <div className='projects-grid'>
@@ -71,6 +79,26 @@ const Projects: React.FC = () => {
             />
           </div>
         )}
+        <div style={{ marginBottom: '80px' }}>
+          <h2
+            style={{
+              fontSize: 60,
+              marginTop: '4rem',
+              color: '#a600ff',
+              overflow: 'hidden',
+            }}
+          >
+            Skills:
+          </h2>
+          <SmallBox skill='TypeScript' />
+          <SmallBox skill='Angular' />
+          <SmallBox skill='React.js' />
+          <SmallBox skill='Kotlin' />
+          <SmallBox skill='Java' />
+          <SmallBox skill='REST' />
+          <SmallBox skill='UI/UX Design' />
+          <SmallBox skill='Amazon DynamoDB' />
+        </div>
       </div>
     </div>
   );

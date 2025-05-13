@@ -1,22 +1,32 @@
+/* Global reset to prevent horizontal scroll */
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* General styles for the project card */
 .project-card {
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid var(--gray-400);
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 1.5rem;
-  box-shadow: -34px 34px 69px #d9d9d9, 34px -34px 69px #ffffff;
+  box-shadow: -15px 3px 20px #d9d9d9, 15px -15px 30px #ffffff;
   overflow: hidden;
   width: 100%;
   height: 450px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0.7rem;
-  transform-style: preserve-3d;
-  will-change: transform;
   cursor: default;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
 }
 
+/* Hover effect */
 .project-card:hover {
-  box-shadow: -40px 40px 80px #d9d9d9, 40px -40px 80px #ffffff;
+  transform: translateY(-5px);
+  box-shadow: -20px 5px 25px #d1d1d1, 20px -20px 35px #ffffff;
+  cursor: pointer;
 }
 
 .project-image {
@@ -25,6 +35,7 @@
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
 .skill-box {
@@ -33,49 +44,97 @@
   background-color: black;
   border-color: none;
   border-radius: 9px;
-  padding: 10px 15px; /* Adds space inside */
+  padding: 10px 15px;
   height: 12px;
   display: inline-block;
   flex: 0 1 auto;
-  min-width: 20px; /* Smallest width allowed */
-  max-width: 300px; /* Prevents it from getting too wide */
-
+  min-width: 20px;
+  max-width: 300px;
   color: white;
   font-size: 12px;
   white-space: nowrap;
-  transition: all 0.3s ease-in-out;
-}
-
-.skill-box:hover {
-  transform: scale(1.05); /* Slight pop-up effect */
-  font-size: 14px;
 }
 
 .project-content {
-  h3 {
-    font-size: 1.9rem;
-    margin-bottom: 0.5rem;
-    color: var(--gray-900);
-  }
-
-  p {
-    font-size: 0.85rem;
-    color: var(--gray-700);
-    overflow-y: auto;
-    max-height: 120px;
-  }
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
 }
 
+.project-content h3 {
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray-900);
+  flex-shrink: 0;
+}
+
+.project-content p {
+  font-size: 0.85rem;
+  color: var(--gray-700);
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 8px;
+}
+
+/* Custom scrollbar for the project content */
+.project-content p::-webkit-scrollbar {
+  width: 6px;
+}
+
+.project-content p::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-content p::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.project-content p::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(166, 0, 255, 0.3);
+}
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
   .project-card {
     height: 400px;
   }
-
+  #projectName {
+    color: black;
+  }
   .project-content h3 {
     font-size: 1.5rem;
   }
 
   .project-content p {
     font-size: 0.8rem;
+    overflow-y: auto;
+  }
+}
+
+/* Dark mode-specific styling */
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    background-color: #ffffff; /* Dark background for dark mode */
+    border: 1px solid var(--gray-600); /* Lighter border for dark mode */
+  }
+  #projectName {
+    color: black;
+  }
+  #projectDescription {
+    color: grey;
+  }
+  .project-content h3 {
+    color: #f0f0f0; /* Light text color for headings in dark mode */
+  }
+
+  .project-content p {
+    color: #b0b0b0; /* Light text color for paragraphs in dark mode */
+  }
+
+  .skill-box {
+    background-color: #333; /* Dark background for skills */
+    color: #fff; /* White text for skills */
   }
 }

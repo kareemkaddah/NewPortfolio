@@ -7,6 +7,7 @@
   padding-left: clamp(1rem, 5vw, 4rem);
   max-width: 100%;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .main-text {
@@ -54,6 +55,7 @@
 @media (max-width: 768px) {
   .hero {
     padding-right: 2rem;
+    overflow-y: auto;
   }
 }
 

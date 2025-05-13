@@ -18,13 +18,22 @@ const Hero: React.FC = () => {
   return (
     <div id='home' className='hero slide-in'>
       <div className='main-text'>
-        <h1>
+        <h1 style={{ overflowY: 'hidden' }}>
           Hi I'm Kareem <WavingHand />
         </h1>
-        <h1 style={{ fontSize: 90, color: '#a600ff', fontWeight: 'bold' }}>
+        <h1
+          style={{
+            fontSize: 90,
+            color: '#a600ff',
+            fontWeight: 'bold',
+            overflow: 'hidden',
+          }}
+        >
           Fullstack
         </h1>
-        <h1 style={{ fontSize: 90, fontWeight: 'bold' }}>Developer</h1>
+        <h1 style={{ fontSize: 90, fontWeight: 'bold', overflow: 'hidden' }}>
+          Developer
+        </h1>
         <h3>
           🚀 Full Stack Developer | React, TypeScript, AWS Serverless |
           Co-Founder Experience | Passionate About Scalable, User-Centric

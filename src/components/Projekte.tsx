@@ -1,6 +1,5 @@
 import React from 'react';
 import './Projekte.css';
-import { useMouseMove } from '../hooks/useMouseMove';
 
 type ProjekteProps = {
   projectImage: string;
@@ -13,20 +12,12 @@ const Projekte: React.FC<ProjekteProps> = ({
   projectImage,
   projectName,
 }) => {
-  const elementRef = useMouseMove();
-
   return (
-    <div>
-      <div className='project-card' ref={elementRef}>
-        <img
-          className='project-image'
-          src={projectImage}
-          alt={projectName}
-        ></img>
-        <div className='project-content'>
-          <h3> {projectName} </h3>
-          <p> {projectDescripition} </p>
-        </div>
+    <div className='project-card'>
+      <img className='project-image' src={projectImage} alt={projectName}></img>
+      <div className='project-content'>
+        <h3 id='projectName'> {projectName} </h3>
+        <p id='projectDescription'> {projectDescripition} </p>
       </div>
     </div>
   );

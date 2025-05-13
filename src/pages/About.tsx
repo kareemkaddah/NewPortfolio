@@ -6,11 +6,25 @@ import Platepal from '../assets/Platepal.png';
 const About: React.FC = () => {
   return (
     <div id='about' className='about-text slide-in-delay-1'>
-      <h1 style={{ fontSize: 90, fontWeight: 'bold', color: '#a600ff' }}>
+      <h1
+        style={{
+          fontSize: 90,
+          fontWeight: 'bold',
+          color: '#a600ff',
+          overflow: 'hidden',
+        }}
+      >
         About
       </h1>
-      <h1 style={{ fontSize: 90, fontWeight: 'bold', marginTop: '-2rem' }}>
-        {' '}
+      <h1
+        id='me'
+        style={{
+          fontSize: 90,
+          fontWeight: 'bold',
+          marginTop: '-2rem',
+          overflow: 'hidden',
+        }}
+      >
         Me:
       </h1>
       <h2>
@@ -23,7 +37,7 @@ const About: React.FC = () => {
       <h2 style={{ fontSize: 60, marginTop: '4rem', color: '#a600ff' }}>
         Education:
       </h2>
-      <div style={{ marginLeft: -20 }}>
+      <div className='experience-container'>
         <Experience
           companyName='RWTH Aachen'
           websiteUrl='https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/studiengaenge/liste-aktuelle-studiengaenge/studiengangbeschreibung/~bcfg/informatik-m-sc/'
@@ -43,7 +57,7 @@ const About: React.FC = () => {
         Work
       </h2>
       <h2 style={{ fontSize: 60, marginTop: '-2rem' }}>Experience:</h2>
-      <div style={{ marginLeft: -20 }}>
+      <div className='experience-container'>
         <Experience
           companyName='Platepal'
           duration='01/2024-12/2024'

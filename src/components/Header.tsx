@@ -43,7 +43,7 @@ const Header: React.FC = () => {
           </div>
         </Link>
       </div>
-      <div className='center'>
+      <div className='center' style={{ overflow: 'hidden' }}>
         {isHomePage ? (
           <>
             <a href='#home' className='nav-link'>

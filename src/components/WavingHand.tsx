@@ -14,7 +14,10 @@ const WavingHand: React.FC = () => {
   }, []);
 
   return (
-    <span className={`waving-hand ${isInitialWave ? 'initial-wave' : ''}`}>
+    <span
+      style={{ overflowY: 'hidden' }}
+      className={`waving-hand ${isInitialWave ? 'initial-wave' : ''}`}
+    >
       👋
     </span>
   );
