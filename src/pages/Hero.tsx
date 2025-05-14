@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
           <span style={{ flex: 1 }}>
             You can contact me at:
             <br />
-            <b>your.email@example.com</b>
+            <b>kontakt@kaddah.de</b>
           </span>
           <button
             onClick={handleCloseNotification}

@@ -49,10 +49,7 @@ const Datenschutz: React.FC = () => {
             If you have any questions regarding data protection, you can contact
             me at:
             <br />
-            Email:{' '}
-            <a href='mailto:karim.kaddah13@gmail.com'>
-              karim.kaddah13@gmail.com
-            </a>
+            Email: <a href='mailto:kontakt@kaddah.de'>kontakt@kaddah.de</a>
           </p>
         </div>
       </main>

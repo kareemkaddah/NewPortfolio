@@ -21,7 +21,7 @@ const Imprint: React.FC = () => {
           </p>
           <h3>Contact</h3>
           <p>
-            <strong>Email:</strong> karim.kaddah13@gmail.com
+            <strong>Email:</strong> kontakt@kaddah.de
           </p>
           <p style={{ fontWeight: 'bold' }}>
             Disclaimer: This website is a personal portfolio for professional
