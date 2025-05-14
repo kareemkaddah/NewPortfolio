@@ -1,11 +1,17 @@
 @import 'tailwindcss';
 
-#root {
-  max-width: 100%;
+html,
+body {
+  background-color: #ffffff;
+  color: #000000;
   margin: 0;
   padding: 0;
-  text-align: left;
 }
-* {
-  overflow-x: hidden;
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }

@@ -15,7 +15,7 @@
 
 .privacy-policy h2 {
   font-size: clamp(2rem, 5vw, 3rem);
-  color: #a600ff;
+  color: #20b2aa;
   margin-bottom: 1.5rem;
   font-weight: bold;
   font-family: inherit;
@@ -39,7 +39,7 @@
 }
 
 .privacy-policy a {
-  color: #a600ff;
+  color: #20b2aa;
   text-decoration: none;
   transition: color 0.3s ease;
 }

@@ -50,16 +50,7 @@ const Projects: React.FC = () => {
   return (
     <div>
       <div id='projects' className='project-text slide-in-delay-2'>
-        <h1
-          style={{
-            fontSize: 90,
-            fontWeight: 'bold',
-            color: '#a600ff',
-            overflow: 'hidden',
-          }}
-        >
-          Projects:
-        </h1>
+        <h1 className='identification_style'>Projects:</h1>
         <div className='projects-grid'>
           {displayedProjects.map((project, index) => (
             <Projekte
@@ -84,7 +75,7 @@ const Projects: React.FC = () => {
             style={{
               fontSize: 60,
               marginTop: '4rem',
-              color: '#a600ff',
+              color: '#20B2AA',
               overflow: 'hidden',
             }}
           >

@@ -32,14 +32,13 @@ const Header: React.FC = () => {
       <div className='left'>
         <Link to='/' style={{ textDecoration: 'none' }}>
           <div
-            className={`name-container ${isHovered ? 'expanded' : ''}`}
+            className={`bracket-container ${isHovered ? 'expanded' : ''}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <span className='initial'>K</span>
-            <span className='rest-of-name'>areem</span>
-            <span className='initial'>K</span>
-            <span className='rest-of-name'>addah</span>
+            <span className='bracket left-bracket'>&#123;</span>
+            <span className='full-name'>Kareem Kaddah</span>
+            <span className='bracket right-bracket'>&#125;</span>
           </div>
         </Link>
       </div>

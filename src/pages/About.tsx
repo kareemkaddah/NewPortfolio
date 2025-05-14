@@ -6,25 +6,8 @@ import Platepal from '../assets/Platepal.png';
 const About: React.FC = () => {
   return (
     <div id='about' className='about-text slide-in-delay-1'>
-      <h1
-        style={{
-          fontSize: 90,
-          fontWeight: 'bold',
-          color: '#a600ff',
-          overflow: 'hidden',
-        }}
-      >
-        About
-      </h1>
-      <h1
-        id='me'
-        style={{
-          fontSize: 90,
-          fontWeight: 'bold',
-          marginTop: '-2rem',
-          overflow: 'hidden',
-        }}
-      >
+      <h1 className='identification_style'>About</h1>
+      <h1 className='identification_style' style={{ color: 'black' }}>
         Me:
       </h1>
       <h2>
@@ -34,9 +17,7 @@ const About: React.FC = () => {
         continuous learning 📚 and collaborative teamwork.
       </h2>
 
-      <h2 style={{ fontSize: 60, marginTop: '4rem', color: '#a600ff' }}>
-        Education:
-      </h2>
+      <h2 className='education_style'>Education:</h2>
       <div className='experience-container'>
         <Experience
           companyName='RWTH Aachen'
@@ -53,10 +34,9 @@ const About: React.FC = () => {
           imageUrl='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ozoy4PwsMVkBh4loyTlwEEe0PTxJ1grNoA&s'
         />
       </div>
-      <h2 style={{ fontSize: 60, marginTop: '4rem', color: '#a600ff' }}>
-        Work
-      </h2>
-      <h2 style={{ fontSize: 60, marginTop: '-2rem' }}>Experience:</h2>
+      <h2 className='section-title'>Work</h2>
+      <h2 className='section-subtitle'>Experience:</h2>
+
       <div className='experience-container'>
         <Experience
           companyName='Platepal'

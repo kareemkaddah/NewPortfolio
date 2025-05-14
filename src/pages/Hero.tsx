@@ -21,17 +21,10 @@ const Hero: React.FC = () => {
         <h1 style={{ overflowY: 'hidden' }}>
           Hi I'm Kareem <WavingHand />
         </h1>
-        <h1
-          style={{
-            fontSize: 90,
-            color: '#a600ff',
-            fontWeight: 'bold',
-            overflow: 'hidden',
-          }}
-        >
+        <h1 className='identification_style' style={{ color: '' }}>
           Fullstack
         </h1>
-        <h1 style={{ fontSize: 90, fontWeight: 'bold', overflow: 'hidden' }}>
+        <h1 className='identification_style' style={{ color: 'black' }}>
           Developer
         </h1>
         <h3>
@@ -44,7 +37,7 @@ const Hero: React.FC = () => {
           <Box
             href='#projects'
             label='Browse Projects'
-            color='#a600ff'
+            color='#20B2AA'
             textColor='white'
           />
         </div>

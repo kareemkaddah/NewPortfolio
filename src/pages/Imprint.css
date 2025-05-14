@@ -10,12 +10,12 @@
   border-radius: 18px;
   margin: 4rem auto;
   width: 100%;
-  /* box-shadow: 0 4px 24px rgba(166, 0, 255, 0.07); */
+  /* box-shadow: 0 4px 24px rgba(32, 178, 170, 0.07); */
 }
 
 .impressum h2 {
   font-size: clamp(2rem, 5vw, 3rem);
-  color: #a600ff;
+  color: #20b2aa;
   margin-bottom: 1.5rem;
   font-weight: bold;
 }
@@ -36,7 +36,7 @@
 }
 
 .impressum p[style*='font-weight: bold'] {
-  color: #a600ff;
+  color: #20b2aa;
   margin-top: 2rem;
   font-size: clamp(1rem, 2.2vw, 1.15rem);
 }

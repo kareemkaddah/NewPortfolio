@@ -1,0 +1,20 @@
+.footerStyle {
+  width: 100%;
+  padding: 18px 32px;
+  background-color: #fff;
+  color: #888;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 1;
+  letter-spacing: 0.2px;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 64px; /* optional spacing above the footer */
+}
+
+/* On mobile, let it scroll naturally if desired */
+@media (max-width: 600px) {
+  .footerStyle {
+    position: static;
+    width: 100%;
+  }
+}

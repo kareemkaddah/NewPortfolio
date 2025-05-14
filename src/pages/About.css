@@ -18,6 +18,18 @@
   margin-left: -40px;
   padding: 0 1rem;
 }
+.identification_style {
+  font-size: 90;
+  color: #20b2aa;
+  font-weight: bold;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .identification_style {
+    font-weight: bold;
+    font-size: 32px;
+  }
+}
 
 .about-text h1 {
   margin: 0 0 1rem 0;
@@ -25,7 +37,7 @@
   max-width: 800px;
 }
 
-.about-text h2 {
+.about-text {
   max-width: 800px;
   line-height: 1.6;
   font-weight: normal;
@@ -35,9 +47,6 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  #me {
-    color: black;
-  }
   .about-text {
     padding: 2rem;
   }
@@ -47,7 +56,7 @@
     margin: 0 0 0.5rem 0;
   }
 
-  .about-text h2 {
+  .about-text {
     font-size: clamp(1rem, 2.2vw, 1.5rem);
     color: #444;
   }
@@ -66,9 +75,6 @@
 }
 
 @media (max-width: 480px) {
-  #me {
-    color: black;
-  }
   .about-text {
     padding: 1.5rem;
   }
@@ -78,7 +84,7 @@
     margin: 0 0 0.5rem 0;
   }
 
-  .about-text h2 {
+  .about-text {
     font-size: clamp(0.9rem, 2vw, 1.5rem);
     color: #444;
   }
@@ -90,5 +96,47 @@
 
   .experience-container > * {
     padding: 0.5rem; /* Optional: internal padding for each Experience card */
+  }
+}
+.education_style {
+  font-size: 60px;
+  margin-top: 4rem;
+  color: #20b2aa;
+}
+
+@media (max-width: 768px) {
+  .education_style {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education_style {
+    font-size: 32px;
+  }
+}
+.section-title {
+  font-size: 60px;
+  margin-top: 4rem;
+  color: #20b2aa;
+}
+
+.section-subtitle {
+  font-size: 60px;
+  margin-top: -2rem;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .section-title,
+  .section-subtitle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title,
+  .section-subtitle {
+    font-size: 32px;
   }
 }

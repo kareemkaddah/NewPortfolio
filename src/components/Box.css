@@ -1,6 +1,6 @@
 /* Fix: hover typo */
 .button:hover {
-  background-color: #a600ff;
+  background-color: #20b2aa;
 }
 
 .box-container {
@@ -41,11 +41,15 @@
 }
 
 /* Special hover effect for purple buttons */
-.box-button[style*='background-color: rgb(166, 0, 255)']:hover {
-  background-color: #8a00d4 !important;
+.box-button[style*='background-color: rgb(32, 178, 170)']:hover {
+  background-color: #1a8f89 !important;
 }
 
 /* Special hover effect for black buttons */
 .box-button[style*='background-color: rgb(0, 0, 0)']:hover {
   background-color: #333 !important;
+}
+
+.box {
+  background-color: #20b2aa;
 }

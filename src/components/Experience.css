@@ -26,8 +26,8 @@
   height: 100%;
   background: linear-gradient(
     45deg,
-    rgba(166, 0, 255, 0.05),
-    rgba(166, 0, 255, 0.1)
+    rgba(32, 178, 170, 0.05),
+    rgba(32, 178, 170, 0.1)
   );
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -36,7 +36,7 @@
 .experience-card:hover {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  border-color: rgba(166, 0, 255, 0.2);
+  border-color: rgba(32, 178, 170, 0.2);
 }
 
 .experience-card:hover::before {
@@ -63,8 +63,8 @@
 
 .experience-card:hover .company-logo {
   transform: scale(1.1);
-  border-color: #a600ff;
-  box-shadow: 0 0 20px rgba(166, 0, 255, 0.2);
+  border-color: #20b2aa;
+  box-shadow: 0 0 20px rgba(32, 178, 170, 0.2);
 }
 
 .text-info {
@@ -80,7 +80,7 @@
 }
 
 .experience-card:hover .company-name {
-  color: #a600ff;
+  color: #20b2aa;
 }
 
 .description {
@@ -103,7 +103,7 @@
 }
 
 .experience-card:hover .duration {
-  color: #a600ff;
+  color: #20b2aa;
 }
 
 .small-button {
@@ -118,7 +118,7 @@
 }
 
 .small-button:hover {
-  background-color: #a600ff;
+  background-color: #20b2aa;
   transform: scale(1.1);
 }
 

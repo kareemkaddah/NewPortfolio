@@ -9,7 +9,17 @@
   background-color: #ffffff;
   overflow: hidden;
 }
-
+.identification_style {
+  font-size: 90;
+  color: '#20B2AA';
+  font-weight: bold;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .identification_style {
+    font-size: 90px;
+  }
+}
 .main-text {
   text-align: left;
   max-width: 800px;
@@ -25,7 +35,7 @@
 .main-text h1:nth-of-type(2) {
   font-size: clamp(3rem, 8vw, 90px);
   margin-top: 10px;
-  color: #a600ff;
+  color: #20b2aa;
 }
 
 .main-text h1:nth-of-type(3) {
